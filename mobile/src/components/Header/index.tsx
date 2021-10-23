@@ -7,22 +7,29 @@ import {
 } from 'react-native';
 
 import LogoSvg from '../../assets/logo.svg';
+import { useAuth } from '../../hooks/auth';
 import { UserPhoto } from '../UserPhoto';
 
 import { styles } from './styles';
 
 export function Header() {
+    const { user, signOut } = useAuth();
     return (
         <View style={styles.container}>
             <LogoSvg />
 
             <View style={styles.logoutButton}>
+                {
+                    user &&
+                    <TouchableOpacity
+                        onPress={signOut}
+                    >
+                        <Text style={styles.logoutText}>Sair</Text>
+                    </TouchableOpacity>
+                }
 
-                <TouchableOpacity>
-                    <Text style={styles.logoutText}>Sair</Text>
-                </TouchableOpacity>
 
-                <UserPhoto imageUri='http://github.com/santosfael.png' />
+                <UserPhoto imageUri={user?.avatar_url} />
             </View>
         </View>
     );

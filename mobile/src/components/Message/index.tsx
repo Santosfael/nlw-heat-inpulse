@@ -6,7 +6,7 @@ import { UserPhoto } from '../UserPhoto';
 
 import { styles } from './styles';
 
-type MessageProps = {
+export type MessageProps = {
     id: string;
     text: string;
     user: {
