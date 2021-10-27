@@ -1,4 +1,4 @@
-## Banner Application
+## NLW Heat / DoWhile
 ![banner](./web/src/assets/banner.png)
 
 ## NLW Heat DoWhile
