@@ -1,9 +1,8 @@
 ## NLW Heat / DoWhile
 ![banner](./web/src/assets/banner.png)
 
-## NLW Heat DoWhile
 The application was divided into backend node, frontend web(ViteJs/RextJs) and mobile (React-Native/ Expo-Cli) how the typescript is being used.\
-Developed of the [Rockecseat](https://app.rocketseat.com.br/), in the Next Level Week (NLW) for programming of all levels.
+Developed of the [Rocketseat](https://app.rocketseat.com.br/), in the Next Level Week (NLW) for programming of all levels.
 ## Getting Started with Create project with ViteJS
 ### We must have installed the following tools:
 * Nodejs together with Npm
